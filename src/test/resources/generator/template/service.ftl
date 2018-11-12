@@ -1,11 +1,11 @@
-package ${basePackage}.service.${sign};
-import ${basePackage}.model.${sign}.${modelNameUpperCamel};
-import ${basePackage}.service.Service;
+package ${basePackage}.service;
+<#--import ${basePackage}.model.${modelNameUpperCamel};-->
+<#--import ${basePackage}.service.Service;-->
 
 /**
- *
- * Created by ${author} on ${date}.
+ * @author ${author}
+ * @time ${date}
  */
-public interface ${modelNameUpperCamel}Service extends Service<${modelNameUpperCamel}> {
+public interface ${modelNameUpperCamel}Service { <#--extends Service<${modelNameUpperCamel}> {-->
 
 }
