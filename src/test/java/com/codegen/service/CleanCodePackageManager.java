@@ -50,6 +50,9 @@ public class CleanCodePackageManager extends CodeGeneratorConfig {
         flag = false;
         file = new File(sPath);
         if (file.isFile() && file.exists()) {
+            if (sPath.endsWith(".gitkeep")) {
+                return true;
+            }
             file.delete();
             flag = true;
         }
