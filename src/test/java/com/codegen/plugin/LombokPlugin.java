@@ -44,6 +44,7 @@ public class LombokPlugin extends PluginAdapter {
         topLevelClass.addImportedType("lombok.Builder");
         topLevelClass.addImportedType("lombok.NoArgsConstructor");
         topLevelClass.addImportedType("lombok.AllArgsConstructor");
+        topLevelClass.addImportedType("javax.persistence.Column");
 
         //添加domain的注解
         topLevelClass.addAnnotation("@Data");

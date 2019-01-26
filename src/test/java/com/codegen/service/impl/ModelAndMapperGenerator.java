@@ -55,7 +55,7 @@ public class ModelAndMapperGenerator extends CodeGeneratorManager implements Cod
      * @param tableName 表名
      * @param modelName 自定义实体类名, 为null则默认将表名下划线转成大驼峰形式
      */
-    private Context initConfig(String tableName, String modelName) {
+    public Context initConfig(String tableName, String modelName) {
         Context context;
         try {
             context = initMybatisGeneratorContext();
